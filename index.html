@@ -184,6 +184,16 @@
                 transform: translateY(-10px);
             }
         }
+
+        @keyframes flash {
+            0% { box-shadow: 0 0 1px #fff; }
+            50% { box-shadow: 0 0 10px #fff; }
+            100% { box-shadow: 0 0 1px #fff; }
+        }
+
+.mode-toggle:active {
+    animation: flash 0.4s ease;
+}
        
         .hero-desc {
             font-size: 1.4rem;
